@@ -88,6 +88,8 @@ static void soundCompletionCallback (SystemSoundID mySSID, void* myself) {
                                                 CFSTR ("aiff"),
                                                 NULL
                                                 );
+
+    assert(soundFileURLRef);
     
     // Create a system sound object representing the sound file
     AudioServicesCreateSystemSoundID (
